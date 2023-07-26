@@ -55,3 +55,31 @@ input:hover {
   color: #d9d9d9;
   transition: 0.2s;
 }
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  color: #901515;
+}
+button {
+  display: flex;
+  background-color: #901515;
+  color: #d9d9d9;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 8px 40px;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+button:hover {
+  background-color: #d9d9d9;
+  border: 2px solid #901515;
+  color: #901515;
+}

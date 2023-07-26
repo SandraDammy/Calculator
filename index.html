@@ -6,75 +6,89 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="conatiner_body">
-        <input type="text" id="display" disabled />
+    <div>
+      <div class="container">
+        <div class="conatiner_body">
+          <input type="text" id="display" disabled />
 
-        <div>
-          <input type="button" value="AC" onclick="clearDisplay('AC')" />
-          <input type="button" value="clc" onclick="deleteDisplay('clc')" />
-          <input type="button" value="%" onclick="addToDisplay('%')" />
-          <input type="button" value="/" onclick="addToDisplay('/')" />
+          <div>
+            <input type="button" value="AC" onclick="clearDisplay('AC')" />
+            <input type="button" value="clc" onclick="deleteDisplay('clc')" />
+            <input type="button" value="%" onclick="calculatePercentage('%')" />
+            <input type="button" value="/" onclick="addToDisplay('/')" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="addToDisplay('7')" />
+            <input type="button" value="8" onclick="addToDisplay('8')" />
+            <input type="button" value="9" onclick="addToDisplay('9')" />
+            <input type="button" value="*" onclick="addToDisplay('*')" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="addToDisplay('4')" />
+            <input type="button" value="5" onclick="addToDisplay('5')" />
+            <input type="button" value="6" onclick="addToDisplay('6')" />
+            <input type="button" value="-" onclick="addToDisplay('-')" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="addToDisplay('1')" />
+            <input type="button" value="2" onclick="addToDisplay('2')" />
+            <input type="button" value="3" onclick="addToDisplay('3')" />
+            <input type="button" value="+" onclick="addToDisplay('+')" />
+          </div>
+          <div>
+            <input type="button" value="±" onclick="addToDisplay('±')" />
+            <input type="button" value="0" onclick="addToDisplay('0')" />
+            <input type="button" value="." onclick="addToDisplay('.')" />
+            <input type="button" value="=" onclick="calculate()" />
+          </div>
         </div>
-        <div>
-          <input type="button" value="7" onclick="addToDisplay('7')" />
-          <input type="button" value="8" onclick="addToDisplay('8')" />
-          <input type="button" value="9" onclick="addToDisplay('9')" />
-          <input type="button" value="*" onclick="addToDisplay('*')" />
-
-        </div>
-        <div>
-          <input type="button" value="4" onclick="addToDisplay('4')" />
-          <input type="button" value="5" onclick="addToDisplay('5')" />
-          <input type="button" value="6" onclick="addToDisplay('6')" />
-          <input type="button" value="-" onclick="addToDisplay('-')" />
-        </div>
-        <div>
-          <input type="button" value="1" onclick="addToDisplay('1')" />
-          <input type="button" value="2" onclick="addToDisplay('2')" />
-          <input type="button" value="3" onclick="addToDisplay('3')" />
-          <input type="button" value="+" onclick="addToDisplay('+')" />
-        </div>
-        <div>
-          <input type="button" value="±" onclick="addToDisplay('±')" />
-          <input type="button" value="0" onclick="addToDisplay('0')" />
-          <input type="button" value="." onclick="addToDisplay('.')" />
-          <input type="button" value="=" onclick="calculate()" />
-        </div>
+      </div>
+      <div class="video">
+        <small>Watch video on how the calculator works.</small>
+        <button>Watch</button>
       </div>
     </div>
 
-<!-- Add Script for function -->
+    <!-- Add Script for function -->
     <script>
-        let displayValue = "";
-    
-        function addToDisplay(value) {
-          displayValue += value;
-          document.getElementById("display").value = displayValue;
-        }
-        // Clear all input
-        function clearDisplay() {
-          displayValue = "";
-          document.getElementById("display").value = "";
-        }
-        // clear a single input
-        function deleteDisplay() {
-            displayValue = displayValue.slice(0, -1);
-          document.getElementById("display").value = displayValue;
-        }
-        // calculate input
-        function calculate() {
-          try {
-            displayValue = eval(displayValue).toString();
-            document.getElementById("display").value = displayValue;
-          } catch (error) {
-            document.getElementById("display").value = "Error";
-          }
+      let displayValue = "";
 
-          function clearAll() {
-            clearDisplay();
-          }
+      function addToDisplay(value) {
+        displayValue += value;
+        document.getElementById("display").value = displayValue;
+      }
+      // Clear all input
+      function clearDisplay() {
+        displayValue = "";
+        document.getElementById("display").value = "";
+      }
+      // clear a single input
+      function deleteDisplay() {
+        displayValue = displayValue.slice(0, -1);
+        document.getElementById("display").value = displayValue;
+      }
+      // calculate input
+      function calculate() {
+        try {
+          displayValue = eval(displayValue).toString();
+          document.getElementById("display").value = displayValue;
+        } catch (error) {
+          document.getElementById("display").value = "Error";
         }
-      </script>
+      }
+      // percentage input
+      function calculatePercentage() {
+        try {
+          displayValue = (eval(displayValue) / 100).toString();
+          document.getElementById("display").value = displayValue;
+        } catch (error) {
+          document.getElementById("display").value = "Error";
+        }
+      }
+      function clearAll() {
+        clearDisplay();
+      }
+
+    </script>
   </body>
 </html>
