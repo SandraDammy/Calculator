@@ -11,8 +11,8 @@
         <input type="text" id="display" disabled />
 
         <div>
-          <input type="button" value="AC" onclick="addToDisplay('AC')" />
-          <input type="button" value="clc" onclick="clearDisplay('clc')" />
+          <input type="button" value="AC" onclick="clearDisplay('AC')" />
+          <input type="button" value="clc" onclick="deleteDisplay('clc')" />
           <input type="button" value="%" onclick="addToDisplay('%')" />
           <input type="button" value="/" onclick="addToDisplay('/')" />
         </div>
@@ -43,5 +43,38 @@
         </div>
       </div>
     </div>
+
+<!-- Add Script for function -->
+    <script>
+        let displayValue = "";
+    
+        function addToDisplay(value) {
+          displayValue += value;
+          document.getElementById("display").value = displayValue;
+        }
+        // Clear all input
+        function clearDisplay() {
+          displayValue = "";
+          document.getElementById("display").value = "";
+        }
+        // clear a single input
+        function deleteDisplay() {
+            displayValue = displayValue.slice(0, -1);
+          document.getElementById("display").value = displayValue;
+        }
+        // calculate input
+        function calculate() {
+          try {
+            displayValue = eval(displayValue).toString();
+            document.getElementById("display").value = displayValue;
+          } catch (error) {
+            document.getElementById("display").value = "Error";
+          }
+
+          function clearAll() {
+            clearDisplay();
+          }
+        }
+      </script>
   </body>
 </html>

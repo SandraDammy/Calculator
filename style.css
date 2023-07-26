@@ -33,10 +33,11 @@ input[type="text"] {
   height: 80px;
   border-radius: 5px;
   border: 2px solid #901515;
-  background-color: #fff;
-  color: #d9d9d9;
+  background-color: #d9d9d9;
+  color: #901515;
   padding: 0 5px 0 5px;
   margin: 0 0px 10px 0px;
+  font-size: 18px;
 }
 input {
   margin: 3px;
@@ -46,6 +47,8 @@ input {
   border-radius: 4px;
   color: #901515;
   cursor: pointer;
+  background-color: #d9d9d9;
+  font-size: 12;
 }
 input:hover {
   background-color: #901515;
