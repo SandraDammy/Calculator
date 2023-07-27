@@ -1,6 +1,6 @@
 ## Calculator App
 
-![Calculator App Screenshot](screenshot.png)
+![Calculator App Screenshot](Cal_img1.jpg)
 
 The Calculator App is a simple web-based calculator application built using HTML, CSS, and JavaScript. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division, as well as the ability to calculate percentages.
 
@@ -34,7 +34,9 @@ You can try out the live demo of the Calculator App [here](https://classy-truffl
 
 ## Screenshots
 
-![Calculator App Screenshot](screenshot.png)
+![Calculator App Screenshot](Cal_img1.jpg)
+![Calculator App Screenshot](Cal_img2.jpg)
+
 
 ## Contributing
 
