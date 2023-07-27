@@ -34,7 +34,7 @@ You can try out the live demo of the Calculator App [here](https://classy-truffl
 
 ## Video
 
-[![Watch the video](Cal_img2.jpg)](Recording_Simple_calculator)
+[![Watch the video](Cal_img2.jpg)](Recording_Simple_calculator.mp4)
 
 ## Screenshots
 
