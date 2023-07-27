@@ -34,13 +34,11 @@ You can try out the live demo of the Calculator App [here](https://classy-truffl
 
 ## Screenshots
 
-![Calculator App Screenshot](Cal_img1.jpg)
-
 ![Calculator App Screenshot](Cal_img2.jpg)
 
 ## Video
 
-[![Watch the video](Recording_Simple_calculator.mp4)]
+![Watch the video](Recording_Simple_calculator.mp4)
 ## Contributing
 
 Contributions to the Calculator App are welcome! If you find a bug or want to add new features, feel free to open an issue or submit a pull request.
