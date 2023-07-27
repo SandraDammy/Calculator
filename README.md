@@ -45,7 +45,7 @@ Contributions to the Calculator App are welcome! If you find a bug or want to ad
 
 ## Contact
 
-If you have any questions or suggestions regarding the Calculator App, please feel free to contact us at [email@example.com](odujirinoluwadamilolasandra@gmail.com).
+If you have any questions or suggestions regarding the Calculator App, please feel free to contact us at [odujirinoluwadamilolasandra@gmail.com](mailto:odujirinoluwadamilolasandra@gmail.com).
 
 ---
 
